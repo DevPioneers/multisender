@@ -1,16 +1,15 @@
 [package]
-name = "sonic_force_disperse"
+name = "multi_sender"
 version = "0.1.0"
 
-# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
-
-[dependencies]
-starknet = "2.3.1"
-openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.8.0-beta.0" }
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest
 
 [[target.starknet-contract]]
-# Enable Sierra codegen.
 sierra = true
+allowed-libfuncs-list.name = "experimental"
 
-# Enable CASM codegen.
-casm = false
+[dependencies]
+starknet = "2.2.0"
+
+[tool.snforge]
+# exit_first = true
