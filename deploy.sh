@@ -1,0 +1,7 @@
+#!/bin/sh
+export STARKNET_RPC="https://starknet-goerli.infura.io/v3/8eb7d215d441492aad3c381f0b22c850"
+export STARKNET_KEYSTORE="~/.starkli-wallets/deployer/key.json"
+export STARKNET_ACCOUNT="~/.starkli-wallets/deployer/account.json"
+starkli deploy --watch 0x06e7cdec659abf9e42cf434f6f5f3ee16aa20001efdb69505b47d35078f424d9 0x026310c8e55ba131149620f7ee816ae336bb311e89f14c8cd871a1ed7cd056ee u256:10 addr:eth 0x026310c8e55ba131149620f7ee816ae336bb311e89f14c8cd871a1ed7cd056ee
+# starkli invoke --watch 0x00dfe8283c6e6500aba7c5af8434db5cdd5fdba0c47fc4d9d90a834be22d2f8d transfer 0x07eaf4be4dc1b51c1f12a6317db70030efaae61a657e8af582e1c473f54b9de3 109000000000000000000 0
+# starkli deploy --watch 0x037f5b591798c0108f7ac9a7a19e981e161b3aa611aedf2e8422bbe1fee8ea8a 0x537461726b6c61756e6368 0x53544c 0x18 0x0 0x026310c8e55ba131149620f7ee816ae336bb311e89f14c8cd871a1ed7cd056ee
